@@ -3,7 +3,7 @@ class Person
   # attr_writer :age
   attr_accessor :name, :age
 
-  def initialize(name, age, weight, email)
+  def initialize(name, age, weight)
     @name = name
     @age = age
     @weight = weight
@@ -50,19 +50,19 @@ class Person
   end
 end
 
-p1 = Person.new("Simon", 25)
+p1 = Person.new("Jose", 36, 77)
 puts p1.greet("clase")
 puts p1.name
 puts p1.age
 # p1.age = 26
 p1.grow
 puts p1.age
-p1.name = "Juan"
+p1.name = "Andres"
 puts p1.name
 puts p1.class
-puts p1.isDead?
+puts p1.is_dead?
 100.times do
   p1.grow
 end
 puts p1.age
-puts p1.isDead?
+puts p1.is_dead?
